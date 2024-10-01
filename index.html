@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+<body>
+    <div>
+        <h2 id="titulo">FORMULÁRIO</h2>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <legend>Dados Pessoais</legend>
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="endereco"><strong>Endereço</strong></label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div class="campo">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+            <div class="campo">
+                <label for="estado"><strong>Estado</strong></label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="CE">CE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend>Dados Profissionais</legend>
+            <div class="campo">
+                <label><strong>Natureza de Cargo</strong></label><br>
+                <label>
+                    <input type="radio" name="natureza_cargo" value="Gerencia" checked> Gerência
+                </label>
+                <label>
+                    <input type="radio" name="natureza_cargo" value="Financeiro"> Financeiro
+                </label>
+                <label>
+                    <input type="radio" name="natureza_cargo" value="Recepção"> Recepção
+                </label>
+                <label>
+                    <input type="radio" name="natureza_cargo" value="Administrativo"> Administrativo
+                </label>
+                <label>
+                    <input type="radio" name="natureza_cargo" value="Jurídico"> Jurídico
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend>Área de Interesse</legend>
+            <div class="campo">
+                <label><strong>Selecione suas áreas de interesse:</strong></label><br>
+                <label>
+                    <input type="checkbox" id="tecnologia1" value="Computação">
+                    Computação
+                </label><br>
+                <label>
+                    <input type="checkbox" id="tecnologia2" value="Biologia">
+                    Biologia
+                </label><br>
+                <label>
+                    <input type="checkbox" id="tecnologia3" value="Meio Ambiente">
+                    Meio Ambiente
+                </label><br>
+                <label>
+                    <input type="checkbox" id="tecnologia4" value="Engenharia">
+                    Engenharia
+                </label><br>
+                <label>
+                    <input type="checkbox" id="tecnologia5" value="História">
+                    História
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>Mini-Currículo:</strong></label><br>
+            <textarea rows="5" style="width: 100%;" id="experiencia" name="experiencia" required></textarea>
+        </div>
+        
+        <button class="botao" type="submit">Enviar</button>
+        <button class="botao" type="reset">Limpar</button>
+    </form>
+</body>
+</html>
